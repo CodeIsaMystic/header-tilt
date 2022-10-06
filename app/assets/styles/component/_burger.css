@@ -1,0 +1,51 @@
+/*=== Burger ===*/
+.burger {
+  width: var(--burger-width);
+  height: var(--header-height);
+  position: fixed;
+  top: 0;
+  left: auto;
+  right: var(--h-gutter);
+  display: flex;
+  align-items: center;
+  z-index: 2;
+  transition: transform 0.3s var(--easing);
+  transform: translateX(0);
+
+  /* Tests purposes */
+  display: none;
+}
+.burger__open span {
+  width: var(--burger-width);
+  height: 2px;
+  background-color: var(--text-dark-color);
+  margin: 6px 0;
+  display: block;
+}
+.burger button {
+  position: absolute;
+  cursor: pointer;
+  border: none;
+  padding: 0;
+  height: 40px;
+  background: none;
+}
+
+/* Reveal logo and move buger when the user scrolls */
+.has-scrolled .burger {
+  transform: translateX(100%);
+}
+.has-scrolled .logo__img {
+  opacity: 1;
+}
+.has-scrolled .logo__text {
+  opacity: 0;
+}
+
+/*=== Media Queries === */
+@media only screen and (min-width: 480px) {
+}
+@media only screen and (min-width: 768px) {
+}
+@media only screen and (min-width: 1140px) {
+}

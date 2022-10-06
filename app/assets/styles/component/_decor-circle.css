@@ -1,0 +1,14 @@
+.decor__circle {
+  border: 1px var(--text-dark-color) solid;
+  border-radius: 100%;
+  width: 20vw;
+  height: 20vw;
+  position: absolute;
+  top: 48vh;
+  left: 22vw;
+  opacity: 0.4;
+  pointer-events: none;
+
+  /* Tests purposes */
+  display: none;
+}

@@ -1,0 +1,39 @@
+
+.cta__circle {
+  width: 7.7vw;
+  height: 7.7vw;
+  position: absolute;
+  top: auto;
+  bottom: -3.8vw;
+  left: 58%;
+  background: url("../../assets/img/img_logo.svg") no-repeat center;
+  background-size: 50% 50%;
+  pointer-events: none;
+}
+.cta__circle--logo {
+  width: 7.7vw;
+  height: 7.7vw;
+  background: url("../../assets/img/img_scroll-badge.svg") no-repeat center;
+  background-size: 100% 100%;
+  animation: rotation 45s linear infinite;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+/* Circle logo keyframe animation */
+@keyframes rotation {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/*=== Media Queries === */
+@media only screen and (min-width: 480px) {
+}
+@media only screen and (min-width: 768px) {
+}
+@media only screen and (min-width: 1140px) {
+}

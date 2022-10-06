@@ -1,0 +1,57 @@
+/*=== Navigation ===*/
+.main-nav {
+  position: fixed;
+  top: 0;
+  right: calc(var(--h-gutter) + 3vw);
+  z-index: 3;
+
+  /* Tests purposes */
+  display: none;
+}
+.main-nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+}
+.main-nav li {
+  padding: 0;
+  margin-right: 3vw;
+  height: var(--header-height);
+  display: flex;
+  align-items: center;
+}
+.main-nav a {
+  color: var(--text-dark-color);
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 0.1vw;
+  position: relative;
+  overflow: hidden;
+}
+.main-nav a::after {
+  display: block;
+  content: "";
+  height: 2px;
+  background-color: var(--text-dark-color);
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  transform: translateX(-101%);
+}
+.main-nav a:hover::after {
+  transition: transform 0.3s var(--easing);
+  transform: translateX(0);
+}
+.main-nav a.animate-out::after {
+  transition: transform 0.3s var(--easing);
+  transform: translateX(100%);
+}
+
+/*=== Media Queries === */
+@media only screen and (min-width: 480px) {
+}
+@media only screen and (min-width: 768px) {
+}
+@media only screen and (min-width: 1140px) {
+}

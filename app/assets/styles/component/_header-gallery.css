@@ -1,0 +1,78 @@
+/*=== Header Gallery 
+    setting a width first, then adjust padding bottom.
+    
+    - 16/9 - landscape:
+    width: 24vw, padding-bottom: (9/16) * width = 13.5
+    
+    - 9/16 - portrait:
+    width: 24vw, padding-bottom: (16/9) * width = 42.6
+  
+  ===*/
+.hg__image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #00000045;
+  pointer-events: none;
+}
+.hg__image--l {
+  width: 18vw;
+  padding-bottom: 26vw;
+}
+.hg__image--m {
+  width: 18vw;
+  padding-bottom: 26.55vw;
+}
+.hg__image--s {
+  width: 13vw;
+  padding-bottom: 19vw;
+}
+.hg__image img {
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  object-fit: cover;
+  object-position: 50% 50%;
+  opacity: 0.8;
+}
+.hg__left .hg__image:nth-child(1) {
+  top: 17vh;
+  left: 18vw;
+}
+.hg__left .hg__image:nth-child(2) {
+  top: 30vh;
+  left: 6vw;
+}
+.hg__left .hg__image:nth-child(3) {
+  top: 56vh;
+  left: 14vw;
+}
+.hg__right .hg__image:nth-child(1) {
+  top: 15vh;
+  left: auto;
+  right: 14vw;
+  width: 24vw;
+  padding-bottom: 21vw;
+}
+.hg__right .hg__image:nth-child(2) {
+  top: 27vh;
+  left: auto;
+  right: 6vw;
+}
+.hg__right .hg__image:nth-child(3) {
+  top: 52vh;
+  left: auto;
+  right: 17vw;
+  width: 16vw;
+  padding-bottom: 20vw;
+  z-index: 1;
+}
+/*=== Media Queries === */
+@media only screen and (min-width: 480px) {
+}
+@media only screen and (min-width: 768px) {
+}
+@media only screen and (min-width: 1140px) {
+}
